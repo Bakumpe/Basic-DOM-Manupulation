@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Table Rows</title>
+
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+    <header>
+        <div class="head">
+            <h1>Filter Table Rows</h1>
+            <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search for names..."> 
+        </div>
+        <div class="profileEntries">
+            <div>
+                <h2>Enter the Profiles</h2>
+            </div>
+            <div class="myInputs"> 
+                <input type="text" id="name" placeholder="Name"> 
+                <input type="number" id="age" placeholder="Age"> 
+                <input type="text" id="sex" placeholder="Sex"> 
+                <button id="addButton">Add Profile</button> 
+            </div> 
+        </div>
+    </header>
+    <br>
+    <main>
+        
+        
+        <table id="myTable"> 
+            <thead> 
+                <tr class="tableHead"> 
+                    <th>Name</th> 
+                    <th>Age</th> 
+                    <th>Sex</th> 
+                    <th>Actions</th> 
+                </tr> 
+            </thead> 
+            
+            <tbody> 
+                <!-- Task rows will be added here --> 
+            </tbody> 
+        </table>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="myscript.js"></script>
+</body>
+</html>

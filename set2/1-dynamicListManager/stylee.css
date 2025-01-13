@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    position: relative;
+    top: 20%;
+    left: 15%;
+    background-color: rgb(37, 37, 94);
+    width: 70%;
+    height: 60px;
+    color: antiquewhite;
+    text-align: center;
+}
+main{
+    position: relative;
+    top: 20%;
+    left: 15%;
+    background-color: rgb(37, 37, 94);
+    width: 70%;
+    height: 60vh;
+    color: antiquewhite;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.myTask{
+    display: flex;
+    width: 70%;
+    font-size: 1.3em;
+}
+.myTask label{
+    position: relative;
+    top: 20px;
+    width: 40%;
+    left: 60px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+.myTask input{
+    position: relative;
+    top: 10px;
+    left: 70px;
+    width: 90%;
+    height: 40px;
+}
+.myTask p{
+    display: flex;
+    position: relative;
+    top: -8px;
+    left: 30%;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(179, 186, 188);
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   color: black;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.button-container{
+    display: flex;
+    position: relative;
+    gap: 25px;
+    top: -15px;
+    left: -80px;
+}

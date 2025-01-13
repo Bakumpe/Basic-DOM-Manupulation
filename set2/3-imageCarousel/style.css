@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+.imageCards {
+    display: flex;
+    overflow: hidden; 
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 80%; 
+    border: 2px solid #786363; 
+    border-radius: 10px; 
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundColors 4s infinite alternate; /* Reference keyframe and set animation properties */
+}
+
+@keyframes backgroundColors {
+    0% {
+        background-color: rgb(240, 169, 180);
+    }
+    25% {
+        background-color: rgb(220, 139, 150);
+    }
+    50% {
+        background-color: rgb(210, 120, 100);
+    }
+    75% {
+        background-color: rgb(180, 80, 60);
+    }
+    100% {
+        background-color: rgb(100, 40, 0);
+    }
+}
+
+
+.item {
+    min-width: 200px;
+    transition: transform 0.4s, opacity 0.3s z-index 0s;
+}
+
+.item.focused {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.scrollButton {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.scrollButton p {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.scrollButton p:hover {
+    background-color: #0056b3;
+}

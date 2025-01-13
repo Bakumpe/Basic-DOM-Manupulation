@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+main{
+    padding: 20px;
+    width: 50%;
+    height: 70vh;
+    background: rgb(81, 77, 77);
+    display: block;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 20px;
+}
+main h1{
+    background-color: rgb(236, 231, 231);
+    border-radius: 20px;
+    text-align: center;
+}
+.clickCounter{
+    display: flex;
+    background-color: bisque;
+    border: 1px solid #ccc; 
+    justify-content: center; 
+    align-items: center;
+    width: 25%;
+    height: 25vh;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    left: 35%;
+}
+button {
+    padding: 5px;
+    position: relative;
+    left: 34%;
+    display: block;
+    width: 30%;
+    height: 8%;
+    border-radius: 20px;
+}

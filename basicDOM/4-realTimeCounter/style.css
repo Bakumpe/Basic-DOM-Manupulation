@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 60px;
+}
+main{
+    display: block;
+    width: 70%;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    border-radius: 20px;
+}
+main h1{
+    text-align: center;
+}
+main textarea{
+    display: flex;
+    width: 90%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 40px;
+    font-size: 1.5em;
+}
+main p{
+    font-size: 2em;
+    margin: 10px;
+    text-align: center;
+}
+.counter{
+    background-color: rgb(125, 194, 201);
+    border-radius: 25px;
+    padding: 10px;
+}

@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed; 
+    top: 10px; /* Distance from the top of the viewport */ 
+    left: 5%; /* Distance from the left of the viewport */ 
+    width: 88.5%;
+    padding: 10px; 
+    background-color: #f1f1f1; 
+    border: 1px solid #ccc; 
+    z-index: 1000; /* Ensure it stays on top of other content */
+    background-color: rgb(37, 37, 94);
+    color: antiquewhite;
+}
+.head input{
+    position: relative;
+    top: 25px;
+    right: 20px;
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+}
+.head{
+    display:flex ;
+    justify-content: space-between;
+}
+.myInputs{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(51, 51, 138);
+}
+.myInputs input{
+    padding: 5px;
+    width: 25%;
+}
+
+main{
+    position: fixed;
+    top: 43%;
+    left: 5%;
+    background-color: rgb(37, 37, 94);
+    width: 90%;
+    height: 80vh;
+    color: antiquewhite;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    justify-content: space-between;
+    flex-grow: 1; /* Allows the table to grow and fill the remaining space */ 
+}
+tbody { 
+    counter-reset: rowNumber; 
+} 
+tbody tr { 
+    counter-increment: rowNumber; 
+} 
+tbody tr td:first-child::before { 
+    content: counter(rowNumber); 
+    min-width: 2em; 
+    margin-right: 10px; 
+    display: inline-block; 
+}
+th{
+    padding: 15px; 
+    text-align: center; 
+    border: 1px solid #ddd; 
+}
+td{
+    padding: 2px;
+    border-bottom: 1px solid #ddd; 
+    gap: 20px;
+}
+
+tr:hover { 
+    background-color: #f1f1f1; 
+    color: black;
+}
+
+.button{
+    background-color: rgb(8, 8, 56);
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.button-container{
+    display: flex;
+    position: relative;
+    gap: 35px;
+    cursor: pointer;
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}
