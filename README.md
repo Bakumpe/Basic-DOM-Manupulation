@@ -1,5 +1,8 @@
 # BASIC DOM MANUPULATION
 
+The index page previews the links for the different practicing DOM manupulation exercises.
+Click on them and be directed to different pages of the DOM manupulation exercises.
+
 ## Changing Text Styles
 
 Change the text styles [Preview](url)
