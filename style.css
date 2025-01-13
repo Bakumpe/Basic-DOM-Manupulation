@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    border: 2px solid rgb(5, 5, 50);
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: 5%;
+    color: rgb(205, 197, 197);
+    text-align: center;
+    background-color: rgb(3, 3, 27);
+}
+main{
+    border: 2px solid rgb(7, 7, 60);
+    width: 90%;
+    height: 70vh;
+    position: relative;
+    top: 80%;
+    left: 5%;
+    background-color: rgb(2, 2, 31);
+    color: rgb(229, 223, 223);
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -10%;
+}
+ul{
+    list-style-type: decimal;
+    list-style-position: initial;
+    text-align: left;
+    font-size: 1.2em;
+}
+ul p{
+    font-size: 2em;
+    text-decoration: double ;
+    
+}
+ul li{
+    padding: 7px;
+    cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(229, 223, 223);
+}
+.mySets{
+    display: block;
+    width: 100%;
+
+}
