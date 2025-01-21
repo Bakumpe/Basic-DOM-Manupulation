@@ -4,13 +4,37 @@ function addOnList() {
         const deleteButton = document.createElement('p'); 
         deleteButton.className = 'button'; 
         deleteButton.innerText = 'Delete';
-        deleteButton.addEventListener('click', () => { 
-            row.remove(); 
-            updateLocalStorage(); // Update local storage after deletion
-            console.log('Row deleted:', row); // Debug log
+    
+        deleteButton.addEventListener('click', () => {
+            // Remove the row from the DOM
+            row.remove();
+        
+            // Get the current list from localStorage
+            let itemList = JSON.parse(localStorage.getItem('MyTasks')) || [];
+        
+            // Find the text of the list item
+            const itemText = row.querySelector('td').innerText;
+            const itemIndex = itemList.findIndex(item => item.name === itemText);
+    
+            // Debugging logs
+            console.log('Attempting to delete:', itemText);
+            console.log('Index found:', itemIndex);
+    
+            // Remove the item from the array if it exists
+            if (itemIndex > -1) {
+                itemList.splice(itemIndex, 1);
+            }
+    
+            // Update the localStorage with the modified list
+            localStorage.setItem('MyTasks', JSON.stringify(itemList));
+    
+            // More debugging logs
+            console.log('Updated list:', itemList);
         });
+    
         return deleteButton;
     }
+    
 
     // Function to add an edit button to a table row
     function addEditButton(row) {
